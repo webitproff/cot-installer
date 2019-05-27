@@ -1,6 +1,7 @@
 ##cot-installer##
-Новый, расширенный и адаптивный скин установщика системы управления сайтом Cotonti Siena 0.9.19. и выше
-Версия установщика: 1.0
+
+Новый, расширенный и адаптивный скин установщика системы управления сайтом Cotonti Siena 0.9.19. и выше.
+Версия установщика: 1.0.
 Copyright: 27.05.2019 WEBITPROFF
 
 ##Подготовка к установке Cotonti Siena при помощи нового инсталятора ##
@@ -18,7 +19,7 @@ Copyright: 27.05.2019 WEBITPROFF
 
 ##обратная связь, сообщения об ошибках и поддержка##
 
-1 -  Email: webitproff@gmail.com
-2 -  Skype: webitproff
-3 -  Telegram: webitproff
-4 -  Viber:+380679097117
+1 -  Email: webitproff@gmail.com.
+2 -  Skype: webitproff.
+3 -  Telegram: webitproff.
+4 -  Viber:+380679097117.
