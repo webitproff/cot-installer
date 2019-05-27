@@ -332,15 +332,19 @@
 					</div>
 					<div>
 						<ul class="uk-list uk-list-divider">
-							<li><a class="uk-text-uppercase uk-font-play" href="#our_video" uk-scroll="offset: 80"><span class="uk-margin-small-right uk-text-danger" uk-icon="icon: youtube"></span>Our Videos on YouTube</a></li>
-							<li><a class="uk-text-uppercase uk-font-play" href="#our_video" uk-scroll="offset: 80"><span class="uk-margin-small-right uk-text-danger" uk-icon="icon: youtube"></span>Our Videos on YouTube</a></li>
+							<li uk-lightbox>
+							<a class="" title="{PHP.L.footer_install_youtube_demoskin_desc}" uk-tooltip="pos: top" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="{PHP.L.footer_install_youtube_demoskin_desc}"><span class="uk-margin-small-left uk-margin-small-right uk-text-danger" uk-icon="icon: youtube"></span><span class="uk-text-uppercase uk-font-play">{PHP.L.footer_install_youtube_demoskin_title}</span></a>
+							</li>
+							<li uk-lightbox>
+							<a class="" title="{PHP.L.footer_install_cot_youtube_tutorial_desc}" uk-tooltip="pos: top" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="{PHP.L.footer_install_cot_youtube_tutorial_desc}"><span class="uk-margin-small-left uk-margin-small-right uk-text-danger" uk-icon="icon: youtube"></span><span class="uk-text-uppercase uk-font-play">{PHP.L.footer_install_cot_youtube_tutorial_title}</span></a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<hr class="uk-divider-icon">
 			  <div class="uk-text-center uk-text-small uk-light">
-				<h6>This theme made on May 25, 2019, by <a href="https://t.me/webitproff" class="uk-text-bold uk-text-warning uk-icon-link uk-margin-small-left uk-margin-small-right" uk-icon="heart" target="_blank" title="webitproff@gmail.com</br> Skype: webitproff</br> Telegram: webitproff</br> Viber: +380679097117" uk-tooltip="pos: top" >WEBITPROFF with </a> for a better web.</h6>
+				<h6>The Theme made on May 27, 2019, by <a href="https://t.me/webitproff" class="uk-text-bold uk-text-warning uk-icon-link uk-margin-small-left uk-margin-small-right" uk-icon="heart" target="_blank" title="webitproff@gmail.com</br> Skype: webitproff</br> Telegram: webitproff</br> Viber: +380679097117" uk-tooltip="pos: top">WEBITPROFF with </a> for a better web.</h6>
 				
 				<script>document.write(new Date().getFullYear())</script>&nbsp;&copy;
 			  </div>
