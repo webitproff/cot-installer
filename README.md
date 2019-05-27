@@ -19,7 +19,11 @@ Copyright: 27.05.2019 WEBITPROFF
 
 ##обратная связь, сообщения об ошибках и поддержка##
 
-1 -  Email: webitproff@gmail.com.
-2 -  Skype: webitproff.
-3 -  Telegram: webitproff.
-4 -  Viber:+380679097117.
+1 -  Email: webitproff@gmail.com
+
+2 -  Skype: webitproff
+
+3 -  Telegram: webitproff
+
+4 -  Viber:+380679097117 
+
