@@ -12,8 +12,6 @@
 		<title>{PHP.L.install_title}</title>
 		<link rel="stylesheet" type="text/css" href="modules/install/tpl/style.css" />
 	</head>
-
-
 	<body>
 		<div class="uk-section uk-section-muted uk-font-play">
 			<div class="uk-container">
@@ -351,62 +349,60 @@
 				<div id="modal-required-to-install" class="uk-modal-container" uk-modal>
 					<div class="uk-modal-dialog uk-font-play"  uk-overflow-auto>
 						<button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-
-							<div class=" uk-card uk-card-default">
-								<div class="uk-modal-header">
-									<h2 class="uk-modal-title uk-text-bold uk-text-primary">Технические требования и установка</h2>
-								</div>
-								<div class="uk-modal-body" uk-overflow>
-									<p class="description">Технические требования и описание процесса установки Cotonti на хостинг.</p>
-									<h2><a class="anchor" href="https://www.cotonti.com:443/docs/start/installation#ch1" name="ch1" id="ch1">#</a>1. Введение</h2>
-									<p>Установка Cotonti происходит в полуавтоматическом режиме через мастер установки, который, в соответствии с выбранными пользователем параметрами, производит настройку конфигурации сайта, заполнение БД и установку модулей и плагинов.</p>
-									<h2><a class="anchor" href="https://www.cotonti.com:443/docs/start/installation#ch2" name="ch2" id="ch2">#</a>2. Требования</h2>
-									<p>Подавляющее большинство веб-хостингов по своим параметрам соответствует требованиям Cotonti. Перед установкой CMF на хостинг убедитесь, что он отвечает сл. требованиям:</p>
-									<div class="uk-panel uk-padding uk-box-shadow-large uk-width-1-2@s" uk-scrollspy="cls: uk-animation-slide-right; repeat: true; delay: 500">
-										<ul class="uk-nav-default uk-nav-parent-icon uk-list uk-list-divider" uk-nav>
-											<li class="uk-nav-header"><span class="uk-margin-small-right" uk-icon="icon: cog"></span><span class="uk-text-bold uk-text-danger">Apache, nginx или другой аналогичный веб-сервер.</span></li>
-											<li class="uk-parent">
-												<a href="#"><span class="uk-margin-small-right" uk-icon="icon: cog"></span><span class="uk-text-bold uk-text-danger">PHP 5.3.3 и выше</span> with support for:</a>
-												<ul class="uk-nav-sub  uk-list uk-list-striped">
-													<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>GD Graphics Library,</li>
-													<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>Hash extension,</li>
-													<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>Mbstring,</li>
-													<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>PCRE,</li>
-													<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>PDO и PDO_MySQL,</li>
-													<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>Sessions,</li>
-													<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>Zlib.</li>
-													<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>mod_rewrite [опционально]</li>
-												</ul>
-											</li>
-											<li class="uk-nav-header"><span class="uk-margin-small-right" uk-icon="icon: cog"></span><span class="uk-text-bold uk-text-danger">MySQL 5.0.7</span> и выше</li>
-											<li class="uk-nav-divider"></li>
-										</ul>
-									</div>
-									</ul>
-									<h2><a class="anchor" href="https://www.cotonti.com:443/docs/start/installation#ch3" name="ch3" id="ch3">#</a>3. Установка</h2>
-									<p><strong>Загрузка Cotonti по FTP</strong></p>
-									<p>Скачайте архив последней&nbsp;версии&nbsp;Cotonti с <a href="https://www.cotonti.com/en/download/">нашего сайта</a>&nbsp;или <a href="http://github.com/Cotonti/Cotonti/releases" rel="nofollow">Github</a>, распакуйте архив. С помощью FTP-клиента загрузите содержимое папки cotonti на ваш хостинг в корневую директорию будущего сайта (обычно, она имеет имя public_html, htdocs или public_www, но бывают и другие варианты (уточните это у своего хостера).</p>
-									<p>После завершения загрузки файлов на хостинг, с помощью FTP-клиента установите для директории /datas/ права 777 (chmod).<br>
-									&nbsp;</p>
-									<p><strong>Установка или обновление с помощью Git</strong></p>
-									<p>Если на вашем хостинге установлен Git, вы можете произвести загрузку с помощью команды</p>
-									<pre>git clone git://github.com/Cotonti/Cotonti.git</pre>
-									<p>Так же, как и при загрузке Cotonti по FTP, убедитесь, что файлы размещены в нужной директории, и не забудьте выставить права на директорию /datas/:</p>
-									<pre>chmod -R 777 datas</pre>
-									<p>Если вы использовали Git для загрузки последней версии Cotonti, ниже приведена команда для удаления всех файлов, если вы не собираетесь использовать Git далее:</p>
-									<pre>rm -rf .git</pre>
-									<p>&nbsp;</p>
-									<p><strong>Запуск мастера установки</strong></p>
-									<p>Теперь откройте браузер и перейдите на ваш сайт. В случае, если ничего не произойдет, перепроверьте, правильно ли вы произвели загрузку Cotonti на хостинг.</p>
-									<p>При первом посещения сайта после загрузки Cotonti на хостинг вы будете автоматически перенаправлены на страницу с мастером установки Cotonti. Если все же по каким-то причинам этого не произошло, введите вручную адрес мастера установки: http://example/install.php</p>
-									<p>Мастер установки имеет интуитивно понятный интерфейс и описание шагов установки. Просто следуйте его указаниям.</p>
-								</div>
-								<div class="uk-modal-footer uk-text-right">
-									<button class="uk-button uk-button-primary uk-modal-close" type="button">Ok!</button>
-								</div>
+						<div class=" uk-card uk-card-default">
+							<div class="uk-modal-header">
+								<h2 class="uk-modal-title uk-text-bold uk-text-primary">Технические требования и установка</h2>
 							</div>
-	</div>
-</div>
+							<div class="uk-modal-body" uk-overflow>
+								<p class="description">Технические требования и описание процесса установки Cotonti на хостинг.</p>
+								<h2><a class="anchor" href="https://www.cotonti.com:443/docs/start/installation#ch1" name="ch1" id="ch1">#</a>1. Введение</h2>
+								<p>Установка Cotonti происходит в полуавтоматическом режиме через мастер установки, который, в соответствии с выбранными пользователем параметрами, производит настройку конфигурации сайта, заполнение БД и установку модулей и плагинов.</p>
+								<h2><a class="anchor" href="https://www.cotonti.com:443/docs/start/installation#ch2" name="ch2" id="ch2">#</a>2. Требования</h2>
+								<p>Подавляющее большинство веб-хостингов по своим параметрам соответствует требованиям Cotonti. Перед установкой CMF на хостинг убедитесь, что он отвечает сл. требованиям:</p>
+								<div class="uk-panel uk-padding uk-box-shadow-large uk-width-1-2@s" uk-scrollspy="cls: uk-animation-slide-right; repeat: true; delay: 500">
+									<ul class="uk-nav-default uk-nav-parent-icon uk-list uk-list-divider" uk-nav>
+										<li class="uk-nav-header"><span class="uk-margin-small-right" uk-icon="icon: cog"></span><span class="uk-text-bold uk-text-danger">Apache, nginx или другой аналогичный веб-сервер.</span></li>
+										<li class="uk-parent">
+											<a href="#"><span class="uk-margin-small-right" uk-icon="icon: cog"></span><span class="uk-text-bold uk-text-danger">PHP 5.3.3 и выше</span> with support for:</a>
+											<ul class="uk-nav-sub  uk-list uk-list-striped">
+												<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>GD Graphics Library,</li>
+												<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>Hash extension,</li>
+												<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>Mbstring,</li>
+												<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>PCRE,</li>
+												<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>PDO и PDO_MySQL,</li>
+												<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>Sessions,</li>
+												<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>Zlib.</li>
+												<li><span class="uk-margin-small-right" uk-icon="icon: cog"></span>mod_rewrite [опционально]</li>
+											</ul>
+										</li>
+										<li class="uk-nav-header"><span class="uk-margin-small-right" uk-icon="icon: cog"></span><span class="uk-text-bold uk-text-danger">MySQL 5.0.7</span> и выше</li>
+										<li class="uk-nav-divider"></li>
+									</ul>
+								</div>
+								<h2><a class="anchor" href="https://www.cotonti.com:443/docs/start/installation#ch3" name="ch3" id="ch3">#</a>3. Установка</h2>
+								<p><strong>Загрузка Cotonti по FTP</strong></p>
+								<p>Скачайте архив последней&nbsp;версии&nbsp;Cotonti с <a href="https://www.cotonti.com/en/download/">нашего сайта</a>&nbsp;или <a href="http://github.com/Cotonti/Cotonti/releases" rel="nofollow">Github</a>, распакуйте архив. С помощью FTP-клиента загрузите содержимое папки cotonti на ваш хостинг в корневую директорию будущего сайта (обычно, она имеет имя public_html, htdocs или public_www, но бывают и другие варианты (уточните это у своего хостера).</p>
+								<p>После завершения загрузки файлов на хостинг, с помощью FTP-клиента установите для директории /datas/ права 777 (chmod).<br>
+								&nbsp;</p>
+								<p><strong>Установка или обновление с помощью Git</strong></p>
+								<p>Если на вашем хостинге установлен Git, вы можете произвести загрузку с помощью команды</p>
+								<pre>git clone git://github.com/Cotonti/Cotonti.git</pre>
+								<p>Так же, как и при загрузке Cotonti по FTP, убедитесь, что файлы размещены в нужной директории, и не забудьте выставить права на директорию /datas/:</p>
+								<pre>chmod -R 777 datas</pre>
+								<p>Если вы использовали Git для загрузки последней версии Cotonti, ниже приведена команда для удаления всех файлов, если вы не собираетесь использовать Git далее:</p>
+								<pre>rm -rf .git</pre>
+								<p>&nbsp;</p>
+								<p><strong>Запуск мастера установки</strong></p>
+								<p>Теперь откройте браузер и перейдите на ваш сайт. В случае, если ничего не произойдет, перепроверьте, правильно ли вы произвели загрузку Cotonti на хостинг.</p>
+								<p>При первом посещения сайта после загрузки Cotonti на хостинг вы будете автоматически перенаправлены на страницу с мастером установки Cotonti. Если все же по каким-то причинам этого не произошло, введите вручную адрес мастера установки: http://example/install.php</p>
+								<p>Мастер установки имеет интуитивно понятный интерфейс и описание шагов установки. Просто следуйте его указаниям.</p>
+							</div>
+							<div class="uk-modal-footer uk-text-right">
+								<button class="uk-button uk-button-primary uk-modal-close" type="button">Ok!</button>
+							</div>
+						</div>
+					</div>
+				</div>
 <!-- Modal update -->
 				<div id="modal-required-to-updating" class="uk-modal-container" uk-modal>
 					<div class="uk-modal-dialog uk-font-play"  uk-overflow-auto>
