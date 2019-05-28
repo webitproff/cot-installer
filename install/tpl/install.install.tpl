@@ -331,11 +331,12 @@
 					<div>
 						<ul class="uk-list uk-list-divider">
 							<li uk-lightbox>
-							<a class="" title="{PHP.L.footer_install_youtube_demoskin_desc}" uk-tooltip="pos: top" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="{PHP.L.footer_install_youtube_demoskin_desc}"><span class="uk-margin-small-left uk-margin-small-right uk-text-danger" uk-icon="icon: youtube"></span><span class="uk-text-uppercase uk-font-play">{PHP.L.footer_install_youtube_demoskin_title}</span></a>
+							<a class="" title="{PHP.L.footer_install_youtube_demoskin_desc}" uk-tooltip="pos: top" href="https://www.youtube.com/watch?v=9CEGRIqnN2g" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen uk-responsive uk-video="automute: true" data-caption="{PHP.L.footer_install_youtube_demoskin_desc}"><span class="uk-margin-small-left uk-margin-small-right uk-text-danger" uk-icon="icon: youtube"></span><span class="uk-text-uppercase uk-font-play">{PHP.L.footer_install_youtube_demoskin_title}</span></a>
 							</li>
-							<li uk-lightbox>
-							<a class="" title="{PHP.L.footer_install_cot_youtube_tutorial_desc}" uk-tooltip="pos: top" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="{PHP.L.footer_install_cot_youtube_tutorial_desc}"><span class="uk-margin-small-left uk-margin-small-right uk-text-danger" uk-icon="icon: youtube"></span><span class="uk-text-uppercase uk-font-play">{PHP.L.footer_install_cot_youtube_tutorial_title}</span></a>
-							</li>
+							<!-- <li uk-lightbox>
+							<a class="" title="{PHP.L.footer_install_cot_youtube_tutorial_desc}" uk-tooltip="pos: top" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="{PHP.L.footer_install_cot_youtube_tutorial_desc}"><span class="uk-margin-small-left uk-margin-small-right uk-text-danger" uk-icon="icon: youtube"></span><span class="uk-text-uppercase uk-font-play"></span></a>
+							</li> -->
+							<li><a class="uk-text-uppercase uk-font-play"  href="https://www.youtube.com/results?search_query=Install+Cotonti+Siena+0.9.19" target="_blank"><span class="uk-margin-small-left uk-margin-small-right uk-text-danger" uk-icon="icon: youtube"></span>{PHP.L.footer_install_cot_youtube_tutorial_title}</a></li>
 						</ul>
 					</div>
 				</div>
@@ -355,9 +356,9 @@
 							</div>
 							<div class="uk-modal-body" uk-overflow>
 								<p class="description">Технические требования и описание процесса установки Cotonti на хостинг.</p>
-								<h2><a class="anchor" href="https://www.cotonti.com:443/docs/start/installation#ch1" name="ch1" id="ch1">#</a>1. Введение</h2>
+								<h2><a class="anchor" target="_blank" href="https://www.cotonti.com:443/docs/start/installation#ch1" name="ch1" id="ch1">#</a>1. Введение</h2>
 								<p>Установка Cotonti происходит в полуавтоматическом режиме через мастер установки, который, в соответствии с выбранными пользователем параметрами, производит настройку конфигурации сайта, заполнение БД и установку модулей и плагинов.</p>
-								<h2><a class="anchor" href="https://www.cotonti.com:443/docs/start/installation#ch2" name="ch2" id="ch2">#</a>2. Требования</h2>
+								<h2><a class="anchor" target="_blank" href="https://www.cotonti.com:443/docs/start/installation#ch2" name="ch2" id="ch2">#</a>2. Требования</h2>
 								<p>Подавляющее большинство веб-хостингов по своим параметрам соответствует требованиям Cotonti. Перед установкой CMF на хостинг убедитесь, что он отвечает сл. требованиям:</p>
 								<div class="uk-panel uk-padding uk-box-shadow-large uk-width-1-2@s" uk-scrollspy="cls: uk-animation-slide-right; repeat: true; delay: 500">
 									<ul class="uk-nav-default uk-nav-parent-icon uk-list uk-list-divider" uk-nav>
@@ -379,9 +380,9 @@
 										<li class="uk-nav-divider"></li>
 									</ul>
 								</div>
-								<h2><a class="anchor" href="https://www.cotonti.com:443/docs/start/installation#ch3" name="ch3" id="ch3">#</a>3. Установка</h2>
+								<h2><a class="anchor" target="_blank" href="https://www.cotonti.com:443/docs/start/installation#ch3" name="ch3" id="ch3">#</a>3. Установка</h2>
 								<p><strong>Загрузка Cotonti по FTP</strong></p>
-								<p>Скачайте архив последней&nbsp;версии&nbsp;Cotonti с <a href="https://www.cotonti.com/en/download/">нашего сайта</a>&nbsp;или <a href="http://github.com/Cotonti/Cotonti/releases" rel="nofollow">Github</a>, распакуйте архив. С помощью FTP-клиента загрузите содержимое папки cotonti на ваш хостинг в корневую директорию будущего сайта (обычно, она имеет имя public_html, htdocs или public_www, но бывают и другие варианты (уточните это у своего хостера).</p>
+								<p>Скачайте архив последней&nbsp;версии&nbsp;Cotonti с <a target="_blank" href="https://www.cotonti.com/en/download/">нашего сайта</a>&nbsp;или <a target="_blank" href="http://github.com/Cotonti/Cotonti/releases" rel="nofollow">Github</a>, распакуйте архив. С помощью FTP-клиента загрузите содержимое папки cotonti на ваш хостинг в корневую директорию будущего сайта (обычно, она имеет имя public_html, htdocs или public_www, но бывают и другие варианты (уточните это у своего хостера).</p>
 								<p>После завершения загрузки файлов на хостинг, с помощью FTP-клиента установите для директории /datas/ права 777 (chmod).<br>
 								&nbsp;</p>
 								<p><strong>Установка или обновление с помощью Git</strong></p>
@@ -417,7 +418,7 @@
 									Эта инструкция поможет вам выполнить необходимые действия, чтобы обновить ваш сайт на Cotonti. Есть основание предположить, что у вас имеется некоторый опыт в работе с веб-сайтами и использовании популярных инструментов, например phpMyAdmin, FTP и т. д.</p>
 								<p>
 									Хорошо, если у вас есть привычка делать резервные копии сайтов и баз данных перед внесением крупных исправлений.</p>
-								<h2><a class="anchor" href="https://www.cotonti.com:443/docs/start/updating#ch1" name="ch1" id="ch1">#</a>1. Проведение обновлений Cotonti Siena</h2>
+								<h2><a class="anchor" target="_blank" href="https://www.cotonti.com:443/docs/start/updating#ch1" name="ch1" id="ch1">#</a>1. Проведение обновлений Cotonti Siena</h2>
 								<p>
 									Большинство обновлений ветви Siena (0.9.x) автоматизированы. Если у вас есть сайт на Siena, ядро, модули или плагины которого вы хотите обновить, выполните следующие действия:</p>
 								<ol><li>
@@ -430,7 +431,7 @@
 									</li>
 									<li>
 										<p>
-											Запустите скрипт установки в окне браузера, например <a href="http://example.com/install.php" rel="nofollow">http://example.com/install.php</a></p>
+											Запустите скрипт установки в окне браузера, например http://example.com/install.php</p>
 									</li>
 									<li>
 										<p>
